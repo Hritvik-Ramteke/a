@@ -7,10 +7,12 @@ const app = express();
 const bodyParser = require("body-parser");
 const axios = require("axios");
 
+BOT_TOKEN = "7364103513:AAE19rvaXPnMaDDc93WZDmU6XyooTqjoB3c"
+SERVER_URL = "https://hritvik-ramteke.github.io/a"
 
 const port = process.env.PORT || 4040;
 const hook = process.env.WEBHOOK_URL;
-const{BOT_TOKEN, SERVER_URL} = process.env
+
 
 const TELEGRAM_API=`https://api.telegram.org/bot${BOT_TOKEN}`;
 const URI = `/webhook/${BOT_TOKEN}`;
